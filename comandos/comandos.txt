@@ -1,0 +1,33 @@
+crear un contenedor "docker build --name <name> "dockerfile||imagen" : tag -t
+
+
+Listado de imagenes "docker images"
+Listado de contenedore en ejecucion "docker ps"
+filtar contenedor por nombre "docker ps -a -f "name=<name>"
+Listado de contenedores detenidos  "docker images"
+descarga una imagen  "docker pull <name>"
+crear contenedor con nombre "docker run --name <name> <imagen>"
+ejecutar contenedor en modo iterativo "docker run --name <name> -it <imagen>"
+iniciar un contenedor "docker start <name||Id>"
+detener un contenedor "docker stop <name||Id>"
+iniciar un contenedor en backgroun "docker run -d <name||Id>"
+iniciar un contenedor en backgroun e interactivo "docker run --name <name> -d -it <image>"
+eliminar un contenedor "docker rm  -f <id||name>"
+eliminar un contenedor "docker image rmi -f  <id||name>"
+logs de docker "docker logs <name> --tails cantidad"
+detener un contenedor "docker kill <name||id>"
+recuperar informacion de una imagen||contenedor "docker inspect id"
+recuperar informacion del sistema "docker info"
+informacion de imagenes y contenedores tenemos "docker system df"
+informacion de lo que hacen en ek contenedor "docker system events"
+elimina todo "docker system prune"
+copiar un archivo a un contenedor "docker cp <file> <name>:<ruta>"
+
+
+EJECUTAR UN COMANDO CON EXEc
+docker exec <contenedor >
+docker exec -it <contenedor > bash
+docker attach <iamgen>
+
+
+
